@@ -5,8 +5,10 @@
 class Motor
 {
 private:
-    uint8_t _IN1 , _IN2;
+    uint8_t _IN1 , _IN2, _EN;
+    bool IS_EN;
 public:
+    Motor(uint8_t IN1, uint8_t IN2, uint8_t EN);
     Motor(uint8_t IN1, uint8_t IN2);
     ~Motor();
     void begin(); 
