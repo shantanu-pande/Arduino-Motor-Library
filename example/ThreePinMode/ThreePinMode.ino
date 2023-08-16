@@ -15,7 +15,7 @@ void setup()
 void loop()
 {
     left.forward(255); //PWM value
-    right.reverse(255); //PWM value
+    right.reverse(255); 
     delay(5000);
 
     left.reverse(128);

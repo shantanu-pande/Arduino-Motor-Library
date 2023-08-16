@@ -14,13 +14,13 @@ void setup()
 
 void loop()
 {
-    left.forward(); 
-    right.reverse();
+    left.forward(255); //PWM value
+    right.reverse(255);
 
     delay(5000);
 
-    left.reverse();
-    right.forward();
+    left.reverse(128);
+    right.forward(128);
 
     delay(5000);
     //Stops the motor
